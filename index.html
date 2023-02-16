@@ -14,6 +14,18 @@
 		/>
 	</head>
 
+	<section class="test_section">
+		<h2>Hello Worl hier ist die Test Sektion:</h2>
+		<button id="bookmarktest" class="bookmark-button" aria-label="Bookmark">
+			<img
+				class="bookmark-icon"
+				src="./icons/bookmark.png"
+				alt="Bookmark Icon"
+			/>
+			<span class="bookmark-text">Bookmark</span>
+		</button>
+	</section>
+
 	<header>
 		<div class="header">
 			<div class="header_box">
@@ -45,7 +57,12 @@
 							<li class="hashtag">#css</li>
 						</ul>
 						<div class="card__button-bookmark">
-							<button class="bookmark" aria-label="bookmark" type="button">
+							<button
+								id="bookmark_button"
+								class="bookmark"
+								aria-label="bookmark"
+								type="button"
+							>
 								<img src="/icons/bookmark.png" alt="bookmark" />
 							</button>
 						</div>
@@ -56,20 +73,13 @@
               -->
 				<li class="card-list__item">
 					<article class="questioncard">
-						<h2 class="card__question">Was ist der höchste Berg der Welt?</h2>
-						<button
-							onclick="showAnswer()"
-							class="card__button-answer"
-							type="button"
-						>
+						<h2 class="card__question">
+							Wer hat die Relativitätstheorie entwickelt?
+						</h2>
+						<button class="card__button-answer" type="button">
 							Show answer
 						</button>
-						<p id="answer" class="answer" style="display: none">
-							Mount Everest
-						</p>
-						<button class="bookmark">
-							<img src="/icons/bookmark.png" alt="bookmark" />
-						</button>
+						<p id="answer" class="answer">Albert Einstein</p>
 
 						<ul class="card__tag-list">
 							<li class="hashtag">#html</li>
@@ -77,7 +87,12 @@
 							<li class="hashtag">#css</li>
 						</ul>
 						<div class="card__button-bookmark">
-							<button class="bookmark" aria-label="bookmark" type="button">
+							<button
+								id="bookmark_button"
+								class="bookmark"
+								aria-label="bookmark"
+								type="button"
+							>
 								<img src="/icons/bookmark.png" alt="bookmark" />
 							</button>
 						</div>
@@ -92,11 +107,7 @@
 						<h2 class="card__question">
 							Wie viele Knochen hat ein erwachsener Mensch?
 						</h2>
-						<button
-							onclick="showAnswer()"
-							class="card__button-answer"
-							type="button"
-						>
+						<button class="card__button-answer" type="button">
 							Show answer
 						</button>
 						<p id="answer" class="answer" style="display: none">
