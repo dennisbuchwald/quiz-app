@@ -24,181 +24,145 @@
 	</header>
 
 	<body>
-		<ul class=".card-list">
-			<!--
+		<main>
+			<ul class=".card-list">
+				<!--
                 FIRST CARD
               -->
-			<li class="card-list__item">
-				<article class="questioncard">
-					<h2 class="card__question">
-						Wer hat die Relativitätstheorie entwickelt?
-					</h2>
-					<button
-						class="card__button-answer"
-						type="button"
-					>
-						Show answer
-					</button>
-					<p id="answer" class="answer" >
-						Albert Einstein
-					</p>
-					</button>
-					<ul class="card__tag-list">
-						<li class="hashtag">#html</li>
-						<li class="hashtag">#flexbox</li>
-						<li class="hashtag">#css</li>
-					</ul>
-					<div class="card__button-bookmark">
-						<button class="bookmark" aria-label="bookmark" type="button">
-							<img src="/icons/bookmark.png" alt="bookmark" />
+				<li class="card-list__item">
+					<article class="questioncard">
+						<h2 class="card__question">
+							Wer hat die Relativitätstheorie entwickelt?
+						</h2>
+						<button class="card__button-answer" type="button">
+							Show answer
 						</button>
-					</div>
-				</article>
-			</li>
-			<!--
+						<p id="answer" class="answer">Albert Einstein</p>
+
+						<ul class="card__tag-list">
+							<li class="hashtag">#html</li>
+							<li class="hashtag">#flexbox</li>
+							<li class="hashtag">#css</li>
+						</ul>
+						<div class="card__button-bookmark">
+							<button class="bookmark" aria-label="bookmark" type="button">
+								<img src="/icons/bookmark.png" alt="bookmark" />
+							</button>
+						</div>
+					</article>
+				</li>
+				<!--
                 SECOND CARD
               -->
-			<li class="card-list__item">
-				<article class="questioncard">
-					<h2 class="card__question">Was ist der höchste Berg der Welt?</h2>
-					<button
-						onclick="showAnswer()"
-						class="card__button-answer"
-						type="button"
-					>
-						Show answer
-					</button>
-					<p id="answer" class="answer" style="display: none">
-						Mount Everest</p>
+				<li class="card-list__item">
+					<article class="questioncard">
+						<h2 class="card__question">Was ist der höchste Berg der Welt?</h2>
+						<button
+							onclick="showAnswer()"
+							class="card__button-answer"
+							type="button"
+						>
+							Show answer
+						</button>
+						<p id="answer" class="answer" style="display: none">
+							Mount Everest
+						</p>
 						<button class="bookmark">
 							<img src="/icons/bookmark.png" alt="bookmark" />
 						</button>
-					</p>
 
-					<ul class="card__tag-list">
-						<li class="hashtag">#html</li>
-						<li class="hashtag">#flexbox</li>
-						<li class="hashtag">#css</li>
-					</ul>
-					<div class="card__button-bookmark">
-						<button class="bookmark" aria-label="bookmark" type="button">
-							<img src="/icons/bookmark.png" alt="bookmark" />
-						</button>
-					</div>
-				</article>
-			</li>
-			<!--
+						<ul class="card__tag-list">
+							<li class="hashtag">#html</li>
+							<li class="hashtag">#flexbox</li>
+							<li class="hashtag">#css</li>
+						</ul>
+						<div class="card__button-bookmark">
+							<button class="bookmark" aria-label="bookmark" type="button">
+								<img src="/icons/bookmark.png" alt="bookmark" />
+							</button>
+						</div>
+					</article>
+				</li>
+				<!--
                 THIRD CARD
               -->
 
-			<li class="card-list__item">
-				<article class="questioncard">
-					<h2 class="card__question">
-						Wie viele Knochen hat ein erwachsener Mensch?
-					</h2>
-					<button
-						onclick="showAnswer()"
-						class="card__button-answer"
-						type="button"
-					>
-						Show answer
-					</button>
-					<p id="answer" class="answer" style="display: none">
-						Ein erwachsener Mensch hat 206 Knochen.
-					</p>
-					<button class="bookmark">
-						<img src="/icons/bookmark.png" alt="bookmark" />
-					</button>
-					<ul class="card__tag-list">
-						<li class="hashtag">#html</li>
-						<li class="hashtag">#flexbox</li>
-						<li class="hashtag">#css</li>
-					</ul>
-					<div class="card__button-bookmark">
-						<button class="bookmark" aria-label="bookmark" type="button">
+				<li class="card-list__item">
+					<article class="questioncard">
+						<h2 class="card__question">
+							Wie viele Knochen hat ein erwachsener Mensch?
+						</h2>
+						<button
+							onclick="showAnswer()"
+							class="card__button-answer"
+							type="button"
+						>
+							Show answer
+						</button>
+						<p id="answer" class="answer" style="display: none">
+							Ein erwachsener Mensch hat 206 Knochen.
+						</p>
+						<button class="bookmark">
 							<img src="/icons/bookmark.png" alt="bookmark" />
 						</button>
-					</div>
-				</article>
-			</li>
-
-			<!-- 			
-			<section class="questioncard">
-				<h2>What property flips the axes in flexbox</h2>
-				<button type="button">Show Answer</button>
-				<button class="bookmark">
-					<img src="/icons/bookmark.png" alt="bookmark" />
-				</button>
-				<section class="hashtagcontainer">
-					<div class="hashtag">#html</div>
-					<div class="hashtag">#flexbox</div>
-					<div class="hashtag">#css</div>
-				</section>
-			</section>
-			<section class="questioncard">
-				<h2>What property flips the axes in flexbox</h2>
-				<button type="button">Show Answer</button>
-				<button class="bookmark">
-					<img src="/icons/bookmark.png" alt="bookmark" />
-				</button>
-				<section class="hashtagcontainer">
-					<div class="hashtag">#html</div>
-					<div class="hashtag">#flexbox</div>
-					<div class="hashtag">#css</div>
-				</section>
-			</section>
-			<section class="questioncard">
-				<h2>What property flips the axes in flexbox</h2>
-				<button type="button">Show Answer</button>
-				<button class="bookmark">
-					<img src="/icons/bookmark.png" alt="bookmark" />
-				</button>
-				<section class="hashtagcontainer">
-					<div class="hashtag">#html</div>
-					<div class="hashtag">#flexbox</div>
-					<div class="hashtag">#css</div>
-				</section>
-			</section> -->
-		</ul>
-	</body>
-
-	<footer>
-		<div>
+						<ul class="card__tag-list">
+							<li class="hashtag">#html</li>
+							<li class="hashtag">#flexbox</li>
+							<li class="hashtag">#css</li>
+						</ul>
+						<div class="card__button-bookmark">
+							<button class="bookmark" aria-label="bookmark" type="button">
+								<img src="/icons/bookmark.png" alt="bookmark" />
+							</button>
+						</div>
+					</article>
+				</li>
+			</ul>
+		</main>
+		<footer>
 			<nav>
-				<section class="footer_style">
-					<ul>
-						<li>
-							<a
-								class="navigation__link"
-								href="./index.html"
-								aria-label="go to home page"
-								><img
-									src="/icons/home.png"
-									alt="home"
-									height="24px"
-									viewbox="0 0 24 24"
-									width="24px"
-							/></a>
-						</li>
-						<li>
-							<a
-								class="navigation__link"
-								href="./bookmark.html"
-								aria-label="go to bookmarks page"
-								><img src="/icons/bookmark.png" alt="bookmark"
-							/></a>
-						</li>
-						<li>
-							<a
-								class="navigation__link"
-								href="./profile.html"
-								aria-label="go to profile page"
-								><img src="/icons/profil.png" alt="profil"
-							/></a>
-						</li>
-					</ul>
-				</section>
+				<ul class="footer_style">
+					<li>
+						<a
+							class="navigation__link"
+							href="./index.html"
+							aria-label="go to home page"
+							><img
+								src="/icons/home.png"
+								alt="home"
+								height="24px"
+								viewbox="0 0 24 24"
+								width="24px"
+						/></a>
+					</li>
+
+					<li>
+						<a
+							class="navigation__link"
+							href="./bookmark.html"
+							aria-label="go to bookmarks page"
+							><img src="/icons/bookmark.png" alt="bookmark"
+						/></a>
+					</li>
+
+					<li>
+						<a
+							class="navigation__link"
+							href="./form.html"
+							aria-label="go to form page"
+							><img src="/icons/form.png" alt="form"
+						/></a>
+					</li>
+					<li>
+						<a
+							class="navigation__link"
+							href="./profile.html"
+							aria-label="go to profile page"
+							><img src="/icons/profil.png" alt="profil"
+						/></a>
+					</li>
+				</ul>
 			</nav>
-		</div>
-	</footer>
+		</footer>
+	</body>
 </html>
