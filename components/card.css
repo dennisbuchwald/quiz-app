@@ -44,11 +44,11 @@
 }
 
 .bookmark {
-	background-color: transparent;
 	border: 0;
 	position: absolute;
 	top: -20px;
 	right: 1px;
+	cursor: pointer;
 }
 
 .card__tag-list {

@@ -1,0 +1,34 @@
+.test_section{
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+
+.bookmark-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bookmark-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 5px;
+
+}
+
+.bookmark-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bookmarked .bookmark-icon {
+  content: url("./icons/bookmark_white.png");
+}
+
+.bookmarked .bookmark-text {
+  color: #007bff;
+}
