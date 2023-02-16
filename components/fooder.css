@@ -36,3 +36,7 @@ footer nav img {
 	padding-bottom: 0px;
 	text-decoration: none;
 }
+
+footer {
+	z-index: 1;
+}

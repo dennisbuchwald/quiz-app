@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="de">
 	<head>
 		<meta charset="UTF-8" />
+		<script src="./index.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width= , initial-scale=1.0" />
-		<!-- <link rel="stylesheet" href="style.css" /> -->
-		<link rel="stylesheet" href="general_settings.css" />
-		<link rel="stylesheet" href="header.css" />
-		<link rel="stylesheet" href="body.css" />
-		<link rel="stylesheet" href="fooder.css" />
+		<title>Quiz-App</title>
+		<link rel="stylesheet" href="./components/style.css" />
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -19,13 +18,111 @@
 		<div class="header">
 			<div class="header_box">
 				<div class="header_text"></div>
-				<h1 class="headline">Quiz App</h1>
+				<h1 class="header__title">Quiz App</h1>
 			</div>
 		</div>
 	</header>
 
 	<body>
-		<div class="card">
+		<ul class=".card-list">
+			<!--
+                FIRST CARD
+              -->
+			<li class="card-list__item">
+				<article class="questioncard">
+					<h2 class="card__question">
+						Wer hat die Relativitätstheorie entwickelt?
+					</h2>
+					<button
+						class="card__button-answer"
+						type="button"
+					>
+						Show answer
+					</button>
+					<p id="answer" class="answer" >
+						Albert Einstein
+					</p>
+					</button>
+					<ul class="card__tag-list">
+						<li class="hashtag">#html</li>
+						<li class="hashtag">#flexbox</li>
+						<li class="hashtag">#css</li>
+					</ul>
+					<div class="card__button-bookmark">
+						<button class="bookmark" aria-label="bookmark" type="button">
+							<img src="/icons/bookmark.png" alt="bookmark" />
+						</button>
+					</div>
+				</article>
+			</li>
+			<!--
+                SECOND CARD
+              -->
+			<li class="card-list__item">
+				<article class="questioncard">
+					<h2 class="card__question">Was ist der höchste Berg der Welt?</h2>
+					<button
+						onclick="showAnswer()"
+						class="card__button-answer"
+						type="button"
+					>
+						Show answer
+					</button>
+					<p id="answer" class="answer" style="display: none">
+						Mount Everest</p>
+						<button class="bookmark">
+							<img src="/icons/bookmark.png" alt="bookmark" />
+						</button>
+					</p>
+
+					<ul class="card__tag-list">
+						<li class="hashtag">#html</li>
+						<li class="hashtag">#flexbox</li>
+						<li class="hashtag">#css</li>
+					</ul>
+					<div class="card__button-bookmark">
+						<button class="bookmark" aria-label="bookmark" type="button">
+							<img src="/icons/bookmark.png" alt="bookmark" />
+						</button>
+					</div>
+				</article>
+			</li>
+			<!--
+                THIRD CARD
+              -->
+
+			<li class="card-list__item">
+				<article class="questioncard">
+					<h2 class="card__question">
+						Wie viele Knochen hat ein erwachsener Mensch?
+					</h2>
+					<button
+						onclick="showAnswer()"
+						class="card__button-answer"
+						type="button"
+					>
+						Show answer
+					</button>
+					<p id="answer" class="answer" style="display: none">
+						Ein erwachsener Mensch hat 206 Knochen.
+					</p>
+					<button class="bookmark">
+						<img src="/icons/bookmark.png" alt="bookmark" />
+					</button>
+					<ul class="card__tag-list">
+						<li class="hashtag">#html</li>
+						<li class="hashtag">#flexbox</li>
+						<li class="hashtag">#css</li>
+					</ul>
+					<div class="card__button-bookmark">
+						<button class="bookmark" aria-label="bookmark" type="button">
+							<img src="/icons/bookmark.png" alt="bookmark" />
+						</button>
+					</div>
+				</article>
+			</li>
+
+			<!-- 			
 			<section class="questioncard">
 				<h2>What property flips the axes in flexbox</h2>
 				<button type="button">Show Answer</button>
@@ -61,39 +158,41 @@
 					<div class="hashtag">#flexbox</div>
 					<div class="hashtag">#css</div>
 				</section>
-			</section>
-			<section class="questioncard">
-				<h2>What property flips the axes in flexbox</h2>
-				<button type="button">Show Answer</button>
-				<button class="bookmark">
-					<img src="/icons/bookmark.png" alt="bookmark" />
-				</button>
-				<section class="hashtagcontainer">
-					<div class="hashtag">#html</div>
-					<div class="hashtag">#flexbox</div>
-					<div class="hashtag">#css</div>
-				</section>
-			</section>
-		</div>
+			</section> -->
+		</ul>
 	</body>
 
 	<footer>
-		<div class="fooder">
+		<div>
 			<nav>
 				<section class="footer_style">
 					<ul>
 						<li>
-							<a href="./index.html"
-								><img src="/icons/home.png" alt="home"
+							<a
+								class="navigation__link"
+								href="./index.html"
+								aria-label="go to home page"
+								><img
+									src="/icons/home.png"
+									alt="home"
+									height="24px"
+									viewbox="0 0 24 24"
+									width="24px"
 							/></a>
 						</li>
 						<li>
-							<a href="./bookmark.html"
+							<a
+								class="navigation__link"
+								href="./bookmark.html"
+								aria-label="go to bookmarks page"
 								><img src="/icons/bookmark.png" alt="bookmark"
 							/></a>
 						</li>
 						<li>
-							<a href="./profil.html"
+							<a
+								class="navigation__link"
+								href="./profile.html"
+								aria-label="go to profile page"
 								><img src="/icons/profil.png" alt="profil"
 							/></a>
 						</li>
