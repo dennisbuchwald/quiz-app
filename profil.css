@@ -1,0 +1,83 @@
+body {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.body_profil {
+	display: grid;
+	grid-template-columns: 1fr 2fr; /* Zwei Spalten */
+	grid-template-rows: auto 1fr auto; /* Drei Reihen */
+	gap: 20px;
+	padding: 20px;
+}
+
+img {
+	width: 100%;
+}
+
+/* Die erste Spalte enthält das Profilbild und den Profilnamen */
+
+/* CSS-Syntax bedeutet: "Wähle das erste <div>-Element, 
+das ein direktes Kind von Elementen mit der Klasse 'body_profil' ist". */
+
+.body_profil > div:nth-of-type(1) {
+	grid-area: 1 / 1 / span 2 / 2; /* Spannt zwei Reihen */
+}
+
+/* "grid-area" definiert das Rastergebiet, das das Element belegt. In diesem Fall bedeutet "1 / 2 / 2 / 3", 
+dass das Element in der ersten Zeile und den Spalten 2 bis 3 platziert wird. 
+Die Werte werden in der Reihenfolge "Zeilenstart / Spaltenstart / Zeilenende / Spaltenende" angegeben. */
+
+/* Die "About me"-Sektion soll zwei Spalten breit sein */
+.about_me {
+	grid-area: 1 / 2 / 2 / 3; /* Spannt zwei Spalten */
+	z-index: -1;
+	padding: 50px;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	border-color: black;
+	border-width: 0px;
+	border-style: solid;
+	margin: 20px;
+	border-radius: 30px;
+	margin-bottom: 1Opx;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Die Zähler und der Einstellungslink sollen in der dritten Reihe liegen */
+.counter {
+	margin-top: 15px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-area: 3 / 1 / 4 / 3;
+}
+
+.counter p {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.settings {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.darkmode {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+/* Der Dark-Mode-Schalter soll in der vierten Reihe liegen */
+.darkmode > div:nth-of-type(4) {
+	grid-area: 4 / 1 / 5 / 3;
+}
+
+/* Stil für den Dark-Mode-Schalter */
+label[for="dark-mode-switch"] {
+	font-weight: bold;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5); /* Skaliert das Checkbox-Element */
+}

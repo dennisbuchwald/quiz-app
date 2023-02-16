@@ -1,0 +1,38 @@
+.footer_style {
+	width: 90vw;
+	height: 120px;
+	border-radius: 30px;
+	bottom: 10px;
+	position: fixed;
+	display: flex;
+	width: 94%;
+	overflow: hidden;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	left: 0px;
+	right: 0px;
+	background: rgba(255, 255, 255, 0.09);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer nav ul {
+	position: fixed;
+	display: flex;
+	width: 90%;
+	height: 120px;
+	justify-content: space-around;
+	overflow: hidden;
+	margin: 0 auto;
+	list-style: none;
+}
+
+footer nav img {
+	margin: 10px;
+	height: 90%;
+	padding-bottom: 0px;
+	text-decoration: none;
+}
